@@ -61,7 +61,7 @@ aws_accounts:
 aws_region: "ap-northeast-1"
 
 # SSM file-transfer bucket name (bucket must exist in the target region)
-ssm_bucket: "ansible-ssm-ebs-disk-utilization"
+ssm_bucket: "ansible-ssm-ebs-sample-poc-disk-utilization-bucket"
 
 # Datadog (optional)
 datadog_api_key: "YOUR_DATADOG_API_KEY"
