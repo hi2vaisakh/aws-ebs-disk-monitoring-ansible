@@ -13,7 +13,8 @@ This repository contains an Ansible playbook that assumes a standardized role in
 ---
 
 ## Architecture Overview
-<img width="424" alt="image" src="https://github.com/user-attachments/assets/33ff7bd4-4ba7-4e3a-a6f0-458117252d8f" />
+<img width="409" alt="image" src="https://github.com/user-attachments/assets/9e4d2ce5-417d-4e20-9015-b6e3162676ef" />
+
  <img width="554" alt="image" src="https://github.com/user-attachments/assets/1ff77062-2186-4865-bdf3-ccb933132a7c" />
 
 
