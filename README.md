@@ -53,8 +53,8 @@ This repository contains an Ansible playbook that assumes a standardized role in
 ```yaml
 # List of AWS accounts
 aws_accounts:
-  - account_id: "20756xxxxx467"
-    role_arn: "arn:aws:iam::20756xxxxx467:role/CrossAccountEC2ReadRole"
+  - account_id: "207xxxxxx467"
+    role_arn: "arn:aws:iam::207xxxxxxx467:role/CrossAccountEC2ReadRole"
   # Add more accounts here if needed
 
 # Single region to consider
@@ -96,7 +96,7 @@ Ensure your AWS credentials can assume the specified cross-account roles.
 ## 2. Run the Playbook
 
 ```bash
-ansible-playbook multi_region_disk_utilization.yml
+ansible-playbook multi_account_ebs_disk_utilization.yml
 ```
 ## Check Output
 
