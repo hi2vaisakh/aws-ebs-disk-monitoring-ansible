@@ -13,7 +13,9 @@ This repository contains an Ansible playbook that assumes a standardized role in
 ---
 
 ## Architecture Overview
-![Editor _ Mermaid Chart-2025-03-28-110021](https://github.com/user-attachments/assets/41c3c2f1-f6fe-4b3d-9eb3-d92ac5e4937d)
+<img width="424" alt="image" src="https://github.com/user-attachments/assets/33ff7bd4-4ba7-4e3a-a6f0-458117252d8f" />
+ <img width="554" alt="image" src="https://github.com/user-attachments/assets/1ff77062-2186-4865-bdf3-ccb933132a7c" />
+
 
 
 ## Overview
