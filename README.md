@@ -13,6 +13,7 @@ This repository contains an Ansible playbook that assumes a standardized role in
 ---
 
 ## Architecture Overview
+![Editor _ Mermaid Chart-2025-03-28-110021](https://github.com/user-attachments/assets/41c3c2f1-f6fe-4b3d-9eb3-d92ac5e4937d)
 
 
 ## Overview
@@ -36,7 +37,7 @@ This repository contains an Ansible playbook that assumes a standardized role in
   ```bash
   ansible-galaxy collection install amazon.aws community.aws
 
-  - **AWS Credentials** with permission to assume roles in each Member Account.
+- **AWS Credentials** with permission to assume roles in each Member Account.
 - **AWS SSM Agent** installed on your EC2 instances.
 - **IAM Roles**:  
   Each Member Account must have a cross-account role (e.g. `CrossAccountEC2ReadRole`) that trusts the Management Account.
@@ -65,7 +66,7 @@ ssm_bucket: "ansible-ssm-ebs-disk-utilization"
 # Datadog (optional)
 datadog_api_key: "YOUR_DATADOG_API_KEY"
 datadog_endpoint: "https://api.datadoghq.com/api/v1/series"
-
+```
 
 ## Ansible Configuration (`ansible.cfg`)
 
@@ -74,7 +75,7 @@ datadog_endpoint: "https://api.datadoghq.com/api/v1/series"
 transport = aws_ssm
 remote_tmp = /tmp/.ansible/tmp
 host_key_checking = False
-
+```
 # Playbook: multi_region_disk_utilization.yml
 
 This playbook contains tasks to:
@@ -82,7 +83,6 @@ This playbook contains tasks to:
 - Gather EC2 disk usage.
 - Write the aggregated report to `aggregated_disk_usage.json`.
 - Upload the report to an S3 bucket.
-- Optionally send data to Datadog.
 
 ## Usage
 
@@ -92,12 +92,12 @@ This playbook contains tasks to:
 ansible-galaxy collection install amazon.aws community.aws
 
 Ensure your AWS credentials can assume the specified cross-account roles.
-
+```
 ## 2. Run the Playbook
 
 ```bash
 ansible-playbook multi_region_disk_utilization.yml
-
+```
 ## Check Output
 
 - The aggregated JSON file (`aggregated_disk_usage.json`) is written locally.
