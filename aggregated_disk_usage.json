@@ -1,0 +1,62 @@
+{
+    "i-00dbdbf7xxxxxxxxx": {
+        "disk": [
+            {
+                "avail": "72G",
+                "filesystem": "/dev/root",
+                "fstype": "ext4",
+                "mountpoint": "/",
+                "pcent": "27%",
+                "size": "97G",
+                "used": "26G"
+            },
+            {
+                "avail": "99M",
+                "filesystem": "/dev/nvme0n1p15",
+                "fstype": "vfat",
+                "mountpoint": "/boot/efi",
+                "pcent": "6%",
+                "size": "105M",
+                "used": "6.1M"
+            }
+        ],
+        "hostname": "i-00dbdbf7xxxxxxxxx"
+    },
+    "i-0b6e0312xxxxxxxxx": {
+        "disk": [
+            {
+                "avail": "35G",
+                "filesystem": "/dev/root",
+                "fstype": "ext4",
+                "mountpoint": "/",
+                "pcent": "30%",
+                "size": "49G",
+                "used": "15G"
+            },
+            {
+                "avail": "99M",
+                "filesystem": "/dev/nvme0n1p15",
+                "fstype": "vfat",
+                "mountpoint": "/boot/efi",
+                "pcent": "6%",
+                "size": "105M",
+                "used": "6.1M"
+            }
+        ],
+        "hostname": "i-0b6e0312xxxxxxxxx"
+    },
+    "i-0fb0b1c4xxxxxxxxx": {
+        "disk": [
+            {
+                "avail": "3.6G",
+                "filesystem": "/dev/xvda1",
+                "fstype": "xfs",
+                "mountpoint": "/",
+                "pcent": "57%",
+                "size": "8.0G",
+                "used": "4.5G"
+            }
+        ],
+        "hostname": "i-0fb0b1c4xxxxxxxxx"
+    }
+}
