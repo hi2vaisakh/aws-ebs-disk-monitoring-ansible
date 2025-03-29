@@ -56,15 +56,15 @@ This repository contains an Ansible playbook that assumes a standardized role in
 ```yaml
 # List of AWS accounts
 aws_accounts:
-  - account_id: "20756xxxxx467"
-    role_arn: "arn:aws:iam::20756xxxxx467:role/CrossAccountEC2ReadRole"
+  - account_id: "207xxxxxxx467"
+    role_arn: "arn:aws:iam::207xxxxxxx467:role/CrossAccountEC2ReadRole"
   # Add more accounts here if needed
 
 # Single region to consider
 aws_region: "ap-northeast-1"
 
 # SSM file-transfer bucket name (bucket must exist in the target region)
-ssm_bucket: "ansible-ssm-ebs-disk-utilization"
+ssm_bucket: "ansible-ssm-ebs-sample-poc-disk-utilization-bucket"
 
 # Datadog (optional)
 datadog_api_key: "YOUR_DATADOG_API_KEY"
