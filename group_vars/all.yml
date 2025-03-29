@@ -1,7 +1,7 @@
 # List of AWS accounts
 aws_accounts:
-  - account_id: "20756xxxxx467"
-    role_arn: "arn:aws:iam::20756xxxxx467:role/CrossAccountEC2ReadRole"
+  - account_id: "207xxxxxxx467"
+    role_arn: "arn:aws:iam::207xxxxxxx467:role/CrossAccountEC2ReadRole"
   # Add more accounts here if needed
 
 # Single region to consider
