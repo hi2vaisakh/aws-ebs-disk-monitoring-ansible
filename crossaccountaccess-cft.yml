@@ -1,0 +1,35 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Cross Account Role for EC2 Read Access and S3 Access
+
+Resources:
+  CrossAccountEC2ReadRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: CrossAccountEC2ReadRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              AWS:
+                - "arn:aws:iam::207xxxxxxx467:root"
+                - "arn:aws:iam::<Ansible Control Plane Account Number>:role/<Ansible Control Plane EC2 Role>"
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: EC2ReadAndS3AccessPolicy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - ec2:DescribeInstances
+                  - ec2:DescribeTags
+                Resource: "*"
+              - Effect: Allow
+                Action:
+                  - s3:PutObject
+                  - s3:GetObject
+                  - s3:ListBucket
+                Resource:
+                  - "ansible-ssm-ebs-sample-poc-disk-utilization-bucket"
+                  - "ansible-ssm-ebs-sample-poc-disk-utilization-bucket/*"
